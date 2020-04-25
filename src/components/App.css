@@ -1,4 +1,121 @@
-h1 {
-    color: #27aedb;
+body {
+    background-color: rgb(75, 191, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinn__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrappContent {
+    max-width: 660px;
+    width: 100%;
+    min-width: 340px;
+    padding: 20px 5px;
+}
+
+.header__wrapper {
+    background: #724fedbf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__input {
+    background: white;
+    width: 60%;
+    margin: 10px 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.count__select {
+    margin-right: 10px;
+    width: 60px;
+    background: white;
+}
+
+.page-link:hover {
+    cursor: pointer;
+    
+}
+
+.pagination {
+    color: #007bff;
+}
+
+.page-link {
+    min-width: 30px;
     text-align: center;
+}
+
+.pagination__wrapper {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.types__wrapper {
+    background: white;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 5px;
+}
+
+
+.type:hover {
+    background: red;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    padding: 15px;
+}
+
+.pokemon__card > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pokemon__card {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 550px) {
+    .dialog {
+        min-width: 300px;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    .wrappContent {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
 }
