@@ -15,9 +15,7 @@ const SearchInput: React.FC = observer(() => {
     const classes = useStyles()
 
     const handleFilter = (evt: React.ChangeEvent<HTMLInputElement>) => {
-        if(evt.target.value.trim() === "") return
-
-        storeContext.setFilter(evt.target.value.toLowerCase())
+        storeContext.setFilter(evt.target.value.trim().toLowerCase())
     }
 
     return (
