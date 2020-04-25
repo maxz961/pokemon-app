@@ -34,9 +34,9 @@ const SearchInput: React.FC = observer(() => {
             value={storeContext.countPageItems}
             onChange={e => storeContext.setCountPageItems(e)}
         >
+            <option value={10}>10</option>
             <option value={20}>20</option>
-            <option value={40}>40</option>
-            <option value={60}>60</option>
+            <option value={50}>50</option>
         </Select>
         </div>
     )

@@ -26,7 +26,7 @@ const currentCountPokemonAfterFilter = (pokemon: any, filter: string, filterType
 class MainStore {
     @observable pokemonts: PokemonInfo[] = []
     @observable filter: string = ""
-    @observable countPageItems: number = 20
+    @observable countPageItems: number = 10
     @observable currentPage: number = 1
     @observable prevPage: number = 1
     @observable allTypePokemon: string[] = []
