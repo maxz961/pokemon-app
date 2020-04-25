@@ -14,13 +14,19 @@ const SearchInput: React.FC = observer(() => {
     const storeContext = useContext(MainStoreContext)
     const classes = useStyles()
 
+    const handleFilter = (evt: React.ChangeEvent<HTMLInputElement>) => {
+        if(evt.target.value.trim() === "") return
+
+        storeContext.setFilter(evt.target.value.toLowerCase())
+    }
+
     return (
         <div className="header__wrapper">
             <input 
                 placeholder="Search field"
                 className={"search__input"}
                 value={storeContext.filter}
-                onChange={e => storeContext.setFilter(e.target.value)}
+                onChange={handleFilter}
             />
 
         <Select
